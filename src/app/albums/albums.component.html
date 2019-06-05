@@ -1,0 +1,15 @@
+<div class="container" *ngIf ="album">
+    <table>
+      <th>userId</th>
+      <th>id</th>
+      <th>title</th>
+        <tr>
+        <td>{{album.userId}}</td>
+        <td>{{album.id}}</td>
+        <td>{{album.title}}</td>
+        </tr>
+    </table>
+    <button (click)="onPrev()">Prev</button>
+    <button (click)="onNext()">Next</button>
+    
+    </div>

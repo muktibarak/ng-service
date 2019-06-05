@@ -1,0 +1,7 @@
+<div class="container" *ngIf="photolink">
+  <h2>This is the specific information detail including the deactivated links to each picture.</h2>
+  <br>
+ {{photolink.id}} | {{photolink.albumId}} | {{photolink.title}} | {{photolink.url}} | {{photolink.thumbnailUrl}}
+ <br>
+ <button (click)="onBack()">Back</button>
+</div>

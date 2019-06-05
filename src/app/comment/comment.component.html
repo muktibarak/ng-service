@@ -1,0 +1,23 @@
+<div class="container" *ngIf ="comment">
+  <table>
+    <th>postId</th>
+    <th>id</th>
+    <th>name</th>
+    <th>email</th>
+    <th>body</th>
+      <tr>
+          <td>{{comment.postId}}</td>
+          <td>{{comment.id}}</td>
+          <td>{{comment.name}}</td>
+          <td>{{comment.email}}</td> 
+          <td>{{comment.body}}</td>
+      </tr>
+  </table>
+   
+      
+      <button (click)="onPrev()" [disabled]= disablePrev>&laquo; Prev</button>
+      <button (click)="onNext()" [disabled]= disableNext>Next &raquo;</button>
+ 
+</div>
+    
+ 

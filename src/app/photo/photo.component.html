@@ -1,0 +1,23 @@
+<div class="container" *ngIf="photo">
+  <!-- <div *ngFor="let photo of photos">{{photo.title}}</div> -->
+  <table>
+    <th>albumId</th>
+    <th>id</th>
+    <th>title</th>
+    <th>url</th>
+    <th>thumbnailUrl</th>
+    <tr>
+      <td>{{photo.albumId}}</td>
+      <td>{{photo.id}}</td>
+      <td>{{photo.title}}</td>
+      <td><a routerLink="{{photo.id}}">{{photo.url}}</a></td> 
+       <!-- <td><a routerLink="{{photo.url}}">{{photo.url}}</a></td>  -->
+      <!-- for passing more than one parameter -->
+      <!-- <td><a routerLink="{{photo.id}}/{{photo.url}}">{{photo.url}}</a></td> -->
+      <td><a routerLink="{{photo.id}}">{{photo.thumbnailUrl}}</a></td> 
+      
+    </tr>
+  </table>
+  <button (click)="onPrev()">Prev</button>
+  <button (click)="onNext()">Next</button>
+</div>

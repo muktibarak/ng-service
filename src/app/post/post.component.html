@@ -1,0 +1,18 @@
+<div class="container" *ngIf ="post">
+<table>
+  <th>userId</th>
+  <th>id</th>
+  <th>title</th>
+  <th>body</th>
+  <tr>
+    <td>{{post.userId}}</td>
+    <td>{{post.id}}</td>
+    <td>{{post.title}}</td>
+    <td>{{post.body}}</td>
+  </tr>
+</table>
+
+<button (click)="onPrev()">Prev</button>
+
+<button (click)="onNext()">Next</button>
+</div>
